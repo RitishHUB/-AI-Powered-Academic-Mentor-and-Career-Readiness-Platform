@@ -1,0 +1,136 @@
+/* Container */
+.pqp-container {
+  min-height: 100vh;
+  background-color: #f5f7fa;
+  padding: 40px 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+}
+
+/* Header */
+.pqp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.pqp-header h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.profile-btn {
+  background-color: #00af69;
+  color: #fff;
+  font-size: 1rem;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Grid Layout */
+.pqp-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+/* Card */
+.pqp-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  transition: box-shadow 0.2s ease;
+}
+
+.pqp-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Image */
+.pqp-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-bottom: 12px;
+  border-radius: 8px;
+}
+
+/* Title */
+.pqp-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 12px;
+}
+
+/* Question Paper Links */
+.pqp-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.pqp-card li {
+  margin: 8px 0;
+}
+
+.pqp-card a {
+  display: inline-block;
+  background-color: #00af69;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.pqp-card a:hover {
+  background-color: #095235;
+}
+
+.quit-btn {
+  background-color: #ff4d4d;
+  color: #fff;
+  font-size: 1rem;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.quit-btn:hover {
+  background-color: #cc0000;
+}
+
+
+/* Responsive */
+@media (max-width: 600px) {
+  .pqp-header h2 {
+    font-size: 1.5rem;
+  }
+
+  .profile-btn {
+    font-size: 0.9rem;
+    padding: 6px 10px;
+  }
+
+  .pqp-card {
+    padding: 16px;
+  }
+
+  .pqp-card h3 {
+    font-size: 1rem;
+  }
+
+  .pqp-card a {
+    font-size: 0.85rem;
+    padding: 5px 10px;
+  }
+}
+
